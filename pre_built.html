@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre built Booking</title>
+    <link rel="stylesheet" href="pre_built.css">
+</head>
+<body>
+    <header class="booking_inquiry_text">
+        <h1>Pre built Booking / Enquiry</h1>
+        <p></p>
+    </header>
+
+    <section class="custom_booking_form">
+        <form id="booking_form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dates">Starting Date</label>
+            <input type="date" id="dates" name="dates" required>
+
+            <label for="notes">Additional Notes</label>
+            <textarea id="notes" name="notes" placeholder="Ex:- Allergics, Custom requests"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <div id="successMessage">Booking successful!</div>
+
+    <footer>
+        <p>&copy; 2025 EcoXplore Adventures | All rights reserved</p>
+    </footer>
+
+    <script>
+        const today = new Date().toISOString().split("T")[0];
+        document.getElementById("dates").setAttribute("min", today);
+
+        document.getElementById("booking_form").addEventListener('submit', function(submitted) {
+            submitted.preventDefault();
+            this.reset();
+
+            const msg = document.getElementById("successMessage");
+            msg.style.display = 'block';
+        });
+    </script>
+</body>
+</html>
