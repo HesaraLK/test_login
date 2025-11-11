@@ -569,7 +569,7 @@ form{
 
 @media screen and (max-width: 450px) {
     .why_travel, .why_container{
-        margin-top: -400px;
+        margin-top: -300px;
     }
 }
 
@@ -599,4 +599,5 @@ form{
     .previous, .next{
         top: calc(50% - 35vh);
     }
+
 }
