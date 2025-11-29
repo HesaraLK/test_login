@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.text-center.mb-5 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #333;
+}
+
+.contact-card {
+    font-family: 'Poppins', sans-serif;
+    background: #efe9f9;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.12);
+}
+
+.icon {
+    font-size: 45px;
+    color: #513393;
+    margin-bottom: 15px;
+}
+
+.contact-card h5 {
+    font-weight: 600;
+    color: #222;
+}
+
+.contact-card p,
+.contact-card a {
+    text-decoration: none;
+    color: #444;
+    font-size: 0.9rem;
+}
+
+.socials .contact-card a {
+    color: #6c63ff;
+    font-weight: 500;
+}
+
+.socials .contact-card a:hover {
+    text-decoration: underline;
+}

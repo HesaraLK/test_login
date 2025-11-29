@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.logo_name1 {
+    color: #706FB3;
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 18px;
+    font-weight: 800;
+    margin-left: 10px;
+}
+
+.logo_name2 {
+    color: #1891DB;
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 36px;
+    line-height: 18px;
+    font-weight: 800;
+    margin-right: 100px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .navbar-brand,
+    .logo_name1,
+    .logo_name2 {
+        line-height: 1.2;
+    }
+
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+        padding: 0.5rem 0;
+    }
+}
+
+@media screen and (max-width: 890px) {
+    .logo_name2 {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logo_name1 {
+        margin-left: 0;
+
+    }
+
+    #logo___ {
+        margin-left: -45px;
+    }
+
+    .logo_name2 {
+        margin-right: 0;
+        margin-left: -1px;
+    }
+
+    #nv_toggler {
+        width: 20px;
+        height: 20px;
+    }
+}
