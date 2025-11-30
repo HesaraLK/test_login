@@ -98,6 +98,8 @@ h1 {
     cursor: pointer;
 }
 
+/*media queries (responsive)*/
+
 @media screen and (max-width: 992px) {
     .category {
         width: 100%;

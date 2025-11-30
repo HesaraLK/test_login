@@ -48,6 +48,8 @@ body {
     background-color: #CFE2F3;
 }
 
+/*login/register form*/
+
 .register_form {
     font-family: 'Poppins', sans-serif;
     background: white;
@@ -263,6 +265,8 @@ form {
     box-shadow: none;
 }
 
+/*website's home page*/
+
 .slider-container {
     position: relative;
     width: 100%;
@@ -386,6 +390,8 @@ form {
     color: #513393;
     font-weight: 800;
 }
+
+/*media queries (responsive)*/
 
 @media screen and (max-width: 1350px) {
 

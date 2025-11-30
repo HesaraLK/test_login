@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/*reusable navbar*/
+
 .logo_name1 {
     color: #706FB3;
     font-family: "Inter", Helvetica, sans-serif;
@@ -17,6 +19,8 @@
     font-weight: 800;
     margin-right: 100px;
 }
+
+/*media queries (responsive)*/
 
 @media screen and (max-width: 992px) {
 

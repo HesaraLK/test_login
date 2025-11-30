@@ -5,6 +5,8 @@ let registerBtn2 = registerBtn[registerBtn.length - 1];
 let loginBtn = document.querySelectorAll(".btn_login");
 let loginBtn2 = loginBtn[loginBtn.length - 1];
 
+//login/register form open
+
 function changeBackground() {
     document.body.style.backgroundImage = "linear-gradient(90deg, #e2e2e2, #c9d6ff)";
     main_content.style.display = "none"
@@ -16,19 +18,27 @@ function changeBackground() {
     registerForm.style.display = "block";
 }
 
+//contact us opens in a new window
+
 document.getElementById('mail').addEventListener('click', function () {
     window.open('contact_us.html', '_blank');
 });
 
+//add active class for the animation to load and show the register form
+
 registerBtn2.addEventListener('click', () => {
     registerForm.classList.add('active');
 });
+
+//remove active class and show the login form again
 
 loginBtn2.addEventListener('click', () => {
     registerForm.classList.remove('active');
 });
 
 let currentIndex = 0;
+
+//image slide every 5 seconds
 
 function moveSlide(step) {
     const slides = document.querySelectorAll('.slide');
@@ -47,6 +57,8 @@ function moveSlide(step) {
 }
 
 setInterval(() => { moveSlide(1); }, 5000);
+
+//making the users cannot choose previous days
 
 const today = new Date().toISOString().split("T")[0];
 document.getElementById("dates").setAttribute("min", today);
